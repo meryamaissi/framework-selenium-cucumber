@@ -1,0 +1,5 @@
+2020-10-14 23:23:06,341 - com.e2eTest.automation.util.AbstractPage - INFO - ^Je ouvre l application OrangeHRM$
+2020-10-14 23:23:06,598 - com.e2eTest.automation.util.AbstractPage - INFO - ^Je saisie le userName$
+2020-10-14 23:23:06,893 - com.e2eTest.automation.util.AbstractPage - INFO - ^Je saisie le mot de passe$
+2020-10-14 23:23:45,141 - com.e2eTest.automation.util.AbstractPage - INFO - Je clique sur le bouton Login$
+2020-10-14 23:23:45,208 - com.e2eTest.automation.util.AbstractPage - INFO - Redirection vers la page Home$
