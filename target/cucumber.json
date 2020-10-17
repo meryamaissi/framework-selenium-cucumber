@@ -6,7 +6,7 @@
         "before": [
           {
             "result": {
-              "duration": 9145471871,
+              "duration": 8011013711,
               "status": "passed"
             },
             "match": {
@@ -21,7 +21,7 @@
         "after": [
           {
             "result": {
-              "duration": 12290568171,
+              "duration": 1703213712,
               "status": "passed"
             },
             "match": {
@@ -34,7 +34,7 @@
         "steps": [
           {
             "result": {
-              "duration": 7594630166,
+              "duration": 2896135894,
               "status": "passed"
             },
             "line": 7,
@@ -46,7 +46,7 @@
           },
           {
             "result": {
-              "duration": 245391661,
+              "duration": 163622004,
               "status": "passed"
             },
             "line": 8,
@@ -58,7 +58,7 @@
           },
           {
             "result": {
-              "duration": 293646287,
+              "duration": 134895051,
               "status": "passed"
             },
             "line": 9,
@@ -70,7 +70,7 @@
           },
           {
             "result": {
-              "duration": 38240249964,
+              "duration": 4508448995,
               "status": "passed"
             },
             "line": 10,
@@ -82,7 +82,7 @@
           },
           {
             "result": {
-              "duration": 57571974,
+              "duration": 61369500,
               "status": "passed"
             },
             "line": 11,
@@ -110,6 +110,214 @@
       {
         "line": 1,
         "name": "@connexion"
+      }
+    ]
+  },
+  {
+    "line": 2,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 6469738079,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Setup.setup()"
+            }
+          }
+        ],
+        "line": 13,
+        "name": "Print data  - text Box",
+        "description": "",
+        "id": "print-data----text-box;print-data----text-box;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 1491476629,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Setup.embedScreenshot(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 3125374188,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I open applicatopn text box",
+            "match": {
+              "location": "PrintDataOutlineStepDef.iOpenApplicatopnTextBox()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 155410311,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I want to print full name \"meryam\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "meryam",
+                  "offset": 27
+                }
+              ],
+              "location": "PrintDataOutlineStepDef.iWantToPrintFullName(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 148679961,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "I want to print email \"test@test.com\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "test@test.com",
+                  "offset": 23
+                }
+              ],
+              "location": "PrintDataOutlineStepDef.iWantToPrintEmail(String)"
+            },
+            "matchedColumns": [
+              1
+            ],
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "line": 1,
+            "name": "@print-data"
+          },
+          {
+            "line": 5,
+            "name": "@outline"
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 5962612226,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Setup.setup()"
+            }
+          }
+        ],
+        "line": 14,
+        "name": "Print data  - text Box",
+        "description": "",
+        "id": "print-data----text-box;print-data----text-box;;3",
+        "after": [
+          {
+            "result": {
+              "duration": 1813026200,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Setup.embedScreenshot(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 4610577403,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I open applicatopn text box",
+            "match": {
+              "location": "PrintDataOutlineStepDef.iOpenApplicatopnTextBox()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 160240598,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I want to print full name \"testPerson\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "testPerson",
+                  "offset": 27
+                }
+              ],
+              "location": "PrintDataOutlineStepDef.iWantToPrintFullName(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 156455264,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "I want to print email \"meryam@gmail.com\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "meryam@gmail.com",
+                  "offset": 23
+                }
+              ],
+              "location": "PrintDataOutlineStepDef.iWantToPrintEmail(String)"
+            },
+            "matchedColumns": [
+              1
+            ],
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "line": 1,
+            "name": "@print-data"
+          },
+          {
+            "line": 5,
+            "name": "@outline"
+          }
+        ]
+      }
+    ],
+    "name": "Print data  - text Box",
+    "description": "As a user i want to print my data",
+    "id": "print-data----text-box",
+    "keyword": "Feature",
+    "uri": "printDataOutline/PrintDataOutline.feature",
+    "tags": [
+      {
+        "line": 1,
+        "name": "@print-data"
       }
     ]
   }
