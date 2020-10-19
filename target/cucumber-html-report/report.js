@@ -1,57 +1,50 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("authentification/Authentification.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("authentificationParam/AuthentificationParam.feature");
 formatter.feature({
   "line": 2,
-  "name": "Authentification - OrangeHRM",
+  "name": "Authentification - Param - OrangeHRM",
   "description": "En tant que utilisateur je souhaite m authentifier",
-  "id": "authentification---orangehrm",
+  "id": "authentification---param---orangehrm",
   "keyword": "Feature",
   "tags": [
     {
       "line": 1,
-      "name": "@connexion"
+      "name": "@tag"
     }
   ]
 });
 formatter.before({
-  "duration": 8011013711,
+  "duration": 7723279855,
   "status": "passed"
 });
-formatter.scenario({
-  "line": 6,
-  "name": "Authentification - OrangeHRM",
+formatter.background({
+  "line": 5,
+  "name": "",
   "description": "",
-  "id": "authentification---orangehrm;authentification---orangehrm",
-  "type": "scenario",
-  "keyword": "Scenario",
-  "tags": [
-    {
-      "line": 5,
-      "name": "@cnx"
-    }
-  ]
+  "type": "background",
+  "keyword": "Background"
 });
 formatter.step({
-  "line": 7,
+  "line": 6,
   "name": "Je ouvre l application OrangeHRM",
   "keyword": "Given "
 });
 formatter.step({
-  "line": 8,
-  "name": "Je saisie le userName",
+  "line": 7,
+  "name": "Je saisie le nom de l utilisateur \"Admin\"",
   "keyword": "When "
 });
 formatter.step({
-  "line": 9,
-  "name": "Je saisie le mot de passe",
+  "line": 8,
+  "name": "Je saisie le mot de passe \"admin123\"",
   "keyword": "And "
 });
 formatter.step({
-  "line": 10,
+  "line": 9,
   "name": "Je clique sur le bouton Login",
   "keyword": "And "
 });
 formatter.step({
-  "line": 11,
+  "line": 10,
   "name": "Redirection vers la page Home",
   "keyword": "Then "
 });
@@ -59,275 +52,190 @@ formatter.match({
   "location": "AuthentificationStepDefinition.jeOuvreLApplicationOrangeHRM()"
 });
 formatter.result({
-  "duration": 2896135894,
+  "duration": 4828110413,
   "status": "passed"
 });
 formatter.match({
-  "location": "AuthentificationStepDefinition.jeSaisieLeUserName()"
+  "arguments": [
+    {
+      "val": "Admin",
+      "offset": 35
+    }
+  ],
+  "location": "AuthentificationParamStepDefinition.jeSaisieLeNomDeLUtilisateur(String)"
 });
 formatter.result({
-  "duration": 163622004,
+  "duration": 178756689,
   "status": "passed"
 });
 formatter.match({
-  "location": "AuthentificationStepDefinition.jeSaisieLeMotDePasse()"
+  "arguments": [
+    {
+      "val": "admin123",
+      "offset": 27
+    }
+  ],
+  "location": "AuthentificationParamStepDefinition.jeSaisieLeMotDePasse(String)"
 });
 formatter.result({
-  "duration": 134895051,
+  "duration": 190987380,
   "status": "passed"
 });
 formatter.match({
   "location": "AuthentificationStepDefinition.jeCliqueSurLeBoutonLogin()"
 });
 formatter.result({
-  "duration": 4508448995,
+  "duration": 3679435100,
   "status": "passed"
 });
 formatter.match({
   "location": "AuthentificationStepDefinition.redirectionVersLaPageHome()"
 });
 formatter.result({
-  "duration": 61369500,
-  "status": "passed"
-});
-formatter.after({
-  "duration": 1703213712,
-  "status": "passed"
-});
-formatter.uri("printDataOutline/PrintDataOutline.feature");
-formatter.feature({
-  "line": 2,
-  "name": "Print data  - text Box",
-  "description": "As a user i want to print my data",
-  "id": "print-data----text-box",
-  "keyword": "Feature",
-  "tags": [
-    {
-      "line": 1,
-      "name": "@print-data"
-    }
-  ]
-});
-formatter.scenarioOutline({
-  "line": 6,
-  "name": "Print data  - text Box",
-  "description": "",
-  "id": "print-data----text-box;print-data----text-box",
-  "type": "scenario_outline",
-  "keyword": "Scenario Outline",
-  "tags": [
-    {
-      "line": 5,
-      "name": "@outline"
-    }
-  ]
-});
-formatter.step({
-  "line": 7,
-  "name": "I open applicatopn text box",
-  "keyword": "Given "
-});
-formatter.step({
-  "line": 8,
-  "name": "I want to print full name \"\u003cfullName\u003e\"",
-  "keyword": "When "
-});
-formatter.step({
-  "line": 9,
-  "name": "I want to print email \"\u003cemail\u003e\"",
-  "keyword": "And "
-});
-formatter.examples({
-  "line": 11,
-  "name": "",
-  "description": "",
-  "id": "print-data----text-box;print-data----text-box;",
-  "rows": [
-    {
-      "cells": [
-        "fullName",
-        "email"
-      ],
-      "line": 12,
-      "id": "print-data----text-box;print-data----text-box;;1"
-    },
-    {
-      "cells": [
-        "meryam",
-        "test@test.com"
-      ],
-      "line": 13,
-      "id": "print-data----text-box;print-data----text-box;;2"
-    },
-    {
-      "cells": [
-        "testPerson",
-        "meryam@gmail.com"
-      ],
-      "line": 14,
-      "id": "print-data----text-box;print-data----text-box;;3"
-    }
-  ],
-  "keyword": "Examples"
-});
-formatter.before({
-  "duration": 6469738079,
+  "duration": 56338838,
   "status": "passed"
 });
 formatter.scenario({
   "line": 13,
-  "name": "Print data  - text Box",
+  "name": "clique - BUZZ",
   "description": "",
-  "id": "print-data----text-box;print-data----text-box;;2",
+  "id": "authentification---param---orangehrm;clique---buzz",
   "type": "scenario",
-  "keyword": "Scenario Outline",
+  "keyword": "Scenario",
   "tags": [
     {
-      "line": 1,
-      "name": "@print-data"
-    },
-    {
-      "line": 5,
-      "name": "@outline"
+      "line": 12,
+      "name": "@buzz"
     }
   ]
 });
 formatter.step({
-  "line": 7,
-  "name": "I open applicatopn text box",
-  "keyword": "Given "
-});
-formatter.step({
-  "line": 8,
-  "name": "I want to print full name \"meryam\"",
-  "matchedColumns": [
-    0
-  ],
+  "line": 14,
+  "name": "Je clique sur le module Buzz",
   "keyword": "When "
 });
-formatter.step({
-  "line": 9,
-  "name": "I want to print email \"test@test.com\"",
-  "matchedColumns": [
-    1
-  ],
-  "keyword": "And "
-});
 formatter.match({
-  "location": "PrintDataOutlineStepDef.iOpenApplicatopnTextBox()"
+  "location": "AuthentificationParamStepDefinition.jeCliqueSurLeModuleBuzz()"
 });
 formatter.result({
-  "duration": 3125374188,
-  "status": "passed"
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "meryam",
-      "offset": 27
-    }
-  ],
-  "location": "PrintDataOutlineStepDef.iWantToPrintFullName(String)"
-});
-formatter.result({
-  "duration": 155410311,
-  "status": "passed"
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "test@test.com",
-      "offset": 23
-    }
-  ],
-  "location": "PrintDataOutlineStepDef.iWantToPrintEmail(String)"
-});
-formatter.result({
-  "duration": 148679961,
+  "duration": 4858560784,
   "status": "passed"
 });
 formatter.after({
-  "duration": 1491476629,
+  "duration": 1714732959,
   "status": "passed"
 });
 formatter.before({
-  "duration": 5962612226,
+  "duration": 6414249566,
+  "status": "passed"
+});
+formatter.background({
+  "line": 5,
+  "name": "",
+  "description": "",
+  "type": "background",
+  "keyword": "Background"
+});
+formatter.step({
+  "line": 6,
+  "name": "Je ouvre l application OrangeHRM",
+  "keyword": "Given "
+});
+formatter.step({
+  "line": 7,
+  "name": "Je saisie le nom de l utilisateur \"Admin\"",
+  "keyword": "When "
+});
+formatter.step({
+  "line": 8,
+  "name": "Je saisie le mot de passe \"admin123\"",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 9,
+  "name": "Je clique sur le bouton Login",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 10,
+  "name": "Redirection vers la page Home",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "AuthentificationStepDefinition.jeOuvreLApplicationOrangeHRM()"
+});
+formatter.result({
+  "duration": 2409003908,
+  "status": "passed"
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "Admin",
+      "offset": 35
+    }
+  ],
+  "location": "AuthentificationParamStepDefinition.jeSaisieLeNomDeLUtilisateur(String)"
+});
+formatter.result({
+  "duration": 129407815,
+  "status": "passed"
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "admin123",
+      "offset": 27
+    }
+  ],
+  "location": "AuthentificationParamStepDefinition.jeSaisieLeMotDePasse(String)"
+});
+formatter.result({
+  "duration": 131842858,
+  "status": "passed"
+});
+formatter.match({
+  "location": "AuthentificationStepDefinition.jeCliqueSurLeBoutonLogin()"
+});
+formatter.result({
+  "duration": 2195219738,
+  "status": "passed"
+});
+formatter.match({
+  "location": "AuthentificationStepDefinition.redirectionVersLaPageHome()"
+});
+formatter.result({
+  "duration": 1086990556,
   "status": "passed"
 });
 formatter.scenario({
-  "line": 14,
-  "name": "Print data  - text Box",
+  "line": 17,
+  "name": "clique - temps",
   "description": "",
-  "id": "print-data----text-box;print-data----text-box;;3",
+  "id": "authentification---param---orangehrm;clique---temps",
   "type": "scenario",
-  "keyword": "Scenario Outline",
+  "keyword": "Scenario",
   "tags": [
     {
-      "line": 1,
-      "name": "@print-data"
-    },
-    {
-      "line": 5,
-      "name": "@outline"
+      "line": 16,
+      "name": "@temps"
     }
   ]
 });
 formatter.step({
-  "line": 7,
-  "name": "I open applicatopn text box",
-  "keyword": "Given "
-});
-formatter.step({
-  "line": 8,
-  "name": "I want to print full name \"testPerson\"",
-  "matchedColumns": [
-    0
-  ],
+  "line": 18,
+  "name": "Je clique sur le module Temp",
   "keyword": "When "
 });
-formatter.step({
-  "line": 9,
-  "name": "I want to print email \"meryam@gmail.com\"",
-  "matchedColumns": [
-    1
-  ],
-  "keyword": "And "
-});
 formatter.match({
-  "location": "PrintDataOutlineStepDef.iOpenApplicatopnTextBox()"
+  "location": "AuthentificationParamStepDefinition.jeCliqueSurLeModuleTemp()"
 });
 formatter.result({
-  "duration": 4610577403,
-  "status": "passed"
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "testPerson",
-      "offset": 27
-    }
-  ],
-  "location": "PrintDataOutlineStepDef.iWantToPrintFullName(String)"
-});
-formatter.result({
-  "duration": 160240598,
-  "status": "passed"
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "meryam@gmail.com",
-      "offset": 23
-    }
-  ],
-  "location": "PrintDataOutlineStepDef.iWantToPrintEmail(String)"
-});
-formatter.result({
-  "duration": 156455264,
+  "duration": 2107769786,
   "status": "passed"
 });
 formatter.after({
-  "duration": 1813026200,
+  "duration": 1375926598,
   "status": "passed"
 });
 });

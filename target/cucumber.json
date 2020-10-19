@@ -3,10 +3,91 @@
     "line": 2,
     "elements": [
       {
+        "line": 5,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 4828110413,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "Je ouvre l application OrangeHRM",
+            "match": {
+              "location": "AuthentificationStepDefinition.jeOuvreLApplicationOrangeHRM()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 178756689,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "Je saisie le nom de l utilisateur \"Admin\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Admin",
+                  "offset": 35
+                }
+              ],
+              "location": "AuthentificationParamStepDefinition.jeSaisieLeNomDeLUtilisateur(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 190987380,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "Je saisie le mot de passe \"admin123\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "admin123",
+                  "offset": 27
+                }
+              ],
+              "location": "AuthentificationParamStepDefinition.jeSaisieLeMotDePasse(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3679435100,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "Je clique sur le bouton Login",
+            "match": {
+              "location": "AuthentificationStepDefinition.jeCliqueSurLeBoutonLogin()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 56338838,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "Redirection vers la page Home",
+            "match": {
+              "location": "AuthentificationStepDefinition.redirectionVersLaPageHome()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
         "before": [
           {
             "result": {
-              "duration": 8011013711,
+              "duration": 7723279855,
               "status": "passed"
             },
             "match": {
@@ -14,14 +95,14 @@
             }
           }
         ],
-        "line": 6,
-        "name": "Authentification - OrangeHRM",
+        "line": 13,
+        "name": "clique - BUZZ",
         "description": "",
-        "id": "authentification---orangehrm;authentification---orangehrm",
+        "id": "authentification---param---orangehrm;clique---buzz",
         "after": [
           {
             "result": {
-              "duration": 1703213712,
+              "duration": 1714732959,
               "status": "passed"
             },
             "match": {
@@ -34,10 +115,37 @@
         "steps": [
           {
             "result": {
-              "duration": 2896135894,
+              "duration": 4858560784,
               "status": "passed"
             },
-            "line": 7,
+            "line": 14,
+            "name": "Je clique sur le module Buzz",
+            "match": {
+              "location": "AuthentificationParamStepDefinition.jeCliqueSurLeModuleBuzz()"
+            },
+            "keyword": "When "
+          }
+        ],
+        "tags": [
+          {
+            "line": 12,
+            "name": "@buzz"
+          }
+        ]
+      },
+      {
+        "line": 5,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 2409003908,
+              "status": "passed"
+            },
+            "line": 6,
             "name": "Je ouvre l application OrangeHRM",
             "match": {
               "location": "AuthentificationStepDefinition.jeOuvreLApplicationOrangeHRM()"
@@ -46,34 +154,46 @@
           },
           {
             "result": {
-              "duration": 163622004,
+              "duration": 129407815,
               "status": "passed"
             },
-            "line": 8,
-            "name": "Je saisie le userName",
+            "line": 7,
+            "name": "Je saisie le nom de l utilisateur \"Admin\"",
             "match": {
-              "location": "AuthentificationStepDefinition.jeSaisieLeUserName()"
+              "arguments": [
+                {
+                  "val": "Admin",
+                  "offset": 35
+                }
+              ],
+              "location": "AuthentificationParamStepDefinition.jeSaisieLeNomDeLUtilisateur(String)"
             },
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 134895051,
+              "duration": 131842858,
               "status": "passed"
             },
-            "line": 9,
-            "name": "Je saisie le mot de passe",
+            "line": 8,
+            "name": "Je saisie le mot de passe \"admin123\"",
             "match": {
-              "location": "AuthentificationStepDefinition.jeSaisieLeMotDePasse()"
+              "arguments": [
+                {
+                  "val": "admin123",
+                  "offset": 27
+                }
+              ],
+              "location": "AuthentificationParamStepDefinition.jeSaisieLeMotDePasse(String)"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 4508448995,
+              "duration": 2195219738,
               "status": "passed"
             },
-            "line": 10,
+            "line": 9,
             "name": "Je clique sur le bouton Login",
             "match": {
               "location": "AuthentificationStepDefinition.jeCliqueSurLeBoutonLogin()"
@@ -82,133 +202,15 @@
           },
           {
             "result": {
-              "duration": 61369500,
+              "duration": 1086990556,
               "status": "passed"
             },
-            "line": 11,
+            "line": 10,
             "name": "Redirection vers la page Home",
             "match": {
               "location": "AuthentificationStepDefinition.redirectionVersLaPageHome()"
             },
             "keyword": "Then "
-          }
-        ],
-        "tags": [
-          {
-            "line": 5,
-            "name": "@cnx"
-          }
-        ]
-      }
-    ],
-    "name": "Authentification - OrangeHRM",
-    "description": "En tant que utilisateur je souhaite m authentifier",
-    "id": "authentification---orangehrm",
-    "keyword": "Feature",
-    "uri": "authentification/Authentification.feature",
-    "tags": [
-      {
-        "line": 1,
-        "name": "@connexion"
-      }
-    ]
-  },
-  {
-    "line": 2,
-    "elements": [
-      {
-        "before": [
-          {
-            "result": {
-              "duration": 6469738079,
-              "status": "passed"
-            },
-            "match": {
-              "location": "Setup.setup()"
-            }
-          }
-        ],
-        "line": 13,
-        "name": "Print data  - text Box",
-        "description": "",
-        "id": "print-data----text-box;print-data----text-box;;2",
-        "after": [
-          {
-            "result": {
-              "duration": 1491476629,
-              "status": "passed"
-            },
-            "match": {
-              "location": "Setup.embedScreenshot(Scenario)"
-            }
-          }
-        ],
-        "type": "scenario",
-        "keyword": "Scenario Outline",
-        "steps": [
-          {
-            "result": {
-              "duration": 3125374188,
-              "status": "passed"
-            },
-            "line": 7,
-            "name": "I open applicatopn text box",
-            "match": {
-              "location": "PrintDataOutlineStepDef.iOpenApplicatopnTextBox()"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 155410311,
-              "status": "passed"
-            },
-            "line": 8,
-            "name": "I want to print full name \"meryam\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "meryam",
-                  "offset": 27
-                }
-              ],
-              "location": "PrintDataOutlineStepDef.iWantToPrintFullName(String)"
-            },
-            "matchedColumns": [
-              0
-            ],
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 148679961,
-              "status": "passed"
-            },
-            "line": 9,
-            "name": "I want to print email \"test@test.com\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "test@test.com",
-                  "offset": 23
-                }
-              ],
-              "location": "PrintDataOutlineStepDef.iWantToPrintEmail(String)"
-            },
-            "matchedColumns": [
-              1
-            ],
-            "keyword": "And "
-          }
-        ],
-        "tags": [
-          {
-            "line": 1,
-            "name": "@print-data"
-          },
-          {
-            "line": 5,
-            "name": "@outline"
           }
         ]
       },
@@ -216,7 +218,7 @@
         "before": [
           {
             "result": {
-              "duration": 5962612226,
+              "duration": 6414249566,
               "status": "passed"
             },
             "match": {
@@ -224,14 +226,14 @@
             }
           }
         ],
-        "line": 14,
-        "name": "Print data  - text Box",
+        "line": 17,
+        "name": "clique - temps",
         "description": "",
-        "id": "print-data----text-box;print-data----text-box;;3",
+        "id": "authentification---param---orangehrm;clique---temps",
         "after": [
           {
             "result": {
-              "duration": 1813026200,
+              "duration": 1375926598,
               "status": "passed"
             },
             "match": {
@@ -240,84 +242,38 @@
           }
         ],
         "type": "scenario",
-        "keyword": "Scenario Outline",
+        "keyword": "Scenario",
         "steps": [
           {
             "result": {
-              "duration": 4610577403,
+              "duration": 2107769786,
               "status": "passed"
             },
-            "line": 7,
-            "name": "I open applicatopn text box",
+            "line": 18,
+            "name": "Je clique sur le module Temp",
             "match": {
-              "location": "PrintDataOutlineStepDef.iOpenApplicatopnTextBox()"
+              "location": "AuthentificationParamStepDefinition.jeCliqueSurLeModuleTemp()"
             },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 160240598,
-              "status": "passed"
-            },
-            "line": 8,
-            "name": "I want to print full name \"testPerson\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "testPerson",
-                  "offset": 27
-                }
-              ],
-              "location": "PrintDataOutlineStepDef.iWantToPrintFullName(String)"
-            },
-            "matchedColumns": [
-              0
-            ],
             "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 156455264,
-              "status": "passed"
-            },
-            "line": 9,
-            "name": "I want to print email \"meryam@gmail.com\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "meryam@gmail.com",
-                  "offset": 23
-                }
-              ],
-              "location": "PrintDataOutlineStepDef.iWantToPrintEmail(String)"
-            },
-            "matchedColumns": [
-              1
-            ],
-            "keyword": "And "
           }
         ],
         "tags": [
           {
-            "line": 1,
-            "name": "@print-data"
-          },
-          {
-            "line": 5,
-            "name": "@outline"
+            "line": 16,
+            "name": "@temps"
           }
         ]
       }
     ],
-    "name": "Print data  - text Box",
-    "description": "As a user i want to print my data",
-    "id": "print-data----text-box",
+    "name": "Authentification - Param - OrangeHRM",
+    "description": "En tant que utilisateur je souhaite m authentifier",
+    "id": "authentification---param---orangehrm",
     "keyword": "Feature",
-    "uri": "printDataOutline/PrintDataOutline.feature",
+    "uri": "authentificationParam/AuthentificationParam.feature",
     "tags": [
       {
         "line": 1,
-        "name": "@print-data"
+        "name": "@tag"
       }
     ]
   }
